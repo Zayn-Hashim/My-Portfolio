@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.05);
+    padding: 20px 10%;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(7px);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    font-weight: 500;
+    cursor: pointer;
+    color: inherit;
+}
+
+.nav-links li:hover a {
+    color: #f39c12;
+    transform: translateY(-3px);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 10% 10%;
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+span {
+    color: #f39c12;
+}
+
+.typing-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    border-right: 2px solid #f39c12;
+    width: fit-content;
+    animation: typing 2s steps(30), blink 1s infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.content-section {
+    padding: 80px 10%;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-weight:500;
+    font-size: 2.5rem;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 60px;
+    background: #f39c12;
+    margin: 10px auto;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+#about {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#education {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#skills {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#projects {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#certifications {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contact {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.progress {
+    height:10px;
+    width: 60%;
+    border-radius:10px;
+    overflow:hidden;
+    position:relative;
+    background:#222;
+    margin: 10px auto;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background:linear-gradient(90deg, #f39c12, #ff6b6b);
+    transition: 2s ease-in-out;
+}
+
+.social-links a {
+    text-decoration: none;
+    display:inline-block;
+    color:white;
+    padding:10px 20px;
+    margin:10px;
+    transition: 0.3s;
+    border-radius:10px;
+    background: rgba(255,255,255,0.1);
+}
+
+.social-links a:hover {
+    color:black;
+    background:#f39c12;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255,255,255,0.1);
+}
